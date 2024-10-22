@@ -1,0 +1,105 @@
+.carousel-item {
+    height: 100vh; /* Full screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Position relative for absolute children */
+}
+
+/* Ensure all elements appear over the background image */
+.carousel-inner {
+    position: relative;
+}
+
+
+.carousel-control-next {
+    left: 80px; /* Offset to prevent overlap */
+}
+
+/* Black control icons */
+.custom-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Text Div Positioned in Lower-Right Corner */
+.carousel-text {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 5; /* Ensure it appears above other elements */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form_add {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card {
+    display: flex;
+    gap: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .info_text h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .info_text p {
+    margin: 0;
+    font-size: 16px;
+    color: #6c757d;
+  }
+  
+  .form_details .form-control {
+    border-radius: 6px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  textarea.form-control {
+    resize: none;
+  }
+  
+  @media (max-width: 768px) {
+    .form_add {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .form_details {
+      width: 100%;
+    }
+  
+    .contact_info {
+      width: 100%;
+    }
+  }
+  
